@@ -1,3 +1,28 @@
+@import "../variables.scss";
 home-page{
     height: 100%;
+}
+.navbar{
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    background-color: #01579B;
+    justify-content: end;
+    li{
+        color: #E1F5FE;
+        padding: 1em 3.5em;
+        align-content: center;
+        transition: background-color .2s ease;
+    }
+    li:hover{
+        background-color:#056ebe;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+        color: #E1F5FE;
+    }
 }

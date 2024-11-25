@@ -8,4 +8,9 @@ html, body{
     background-color: $bg-color;
     color: $font-color;
     font-family: $main-font;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none !important;
 }
