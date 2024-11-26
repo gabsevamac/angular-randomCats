@@ -1,13 +1,13 @@
 <div class="documentation-container">
   <nav class="table-content">
     <ul>
-        <li><button>General Info</button></li>
-        <li><button>Content 2</button></li>
-        <li><button>Content 3</button></li>
+        <li><button (click)="scrollTo(general)">General Information</button></li>
+        <li><button (click)="scrollTo(descriptions)">Endpoints Descriptions</button></li>
+        <li><button (click)="scrollTo(params)">Params and Returns</button></li>
       </ul>
   </nav>
   <div class="content">
-    <h2>General information</h2>
+    <h2 #general>General information</h2>
     <p>
       This API is a non-commercial project developed as part of a college
       assignment. Its primary purpose is to serve as a practical implementation
@@ -21,7 +21,7 @@
       technologies.
     </p>
     <hr class="divider">
-    <h2>Endpoints Descriptions</h2>
+    <h2 #descriptions>Endpoints Descriptions</h2>
     <p><strong class="get">GET</strong> /img - Retrieves a complete list of all images stored in the database.</p>
     <p><strong class="get">GET</strong> /random/img - Fetches a randomly selected image from the database.</p>
     <p><strong class="post">POST</strong> /img/upload - Allows you to upload a new image to the database.</p>
@@ -29,11 +29,11 @@
     <p><strong class="put">PUT</strong> /update/{{'{id}'}} - Update an existing image in the database using its ID.</p>
     <p><strong class="delete">DELETE</strong> /img/{{'{id}'}} - Pass a list of IDs to delete multiple images from the database.</p>
     <hr class="divider">
-    <h2>Params and Returns</h2>
+    <h2 #params>Params and Returns</h2>
     <div class="endpoint">
         
         <ul>
-            <p>Headers: </p>
+            <h3>Headers: </h3>
             <img src="headers.svg" alt="headers">
             <li class="endpoint">
                 <h3>Image Endpoints</h3>

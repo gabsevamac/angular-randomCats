@@ -9,6 +9,9 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion'
   styleUrl: './docs-page.component.scss'
 })
 export class DocsPageComponent {
-
+  
+  scrollTo(elem: HTMLElement){
+    elem.scrollIntoView();
+  }
 
 }
