@@ -3,11 +3,15 @@ home-page{
     height: 100%;
 }
 .navbar{
-    display: flex;
-    margin: 0;
-    list-style-type: none;
+    top: 0;
+    ul{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+    }
     background-color: #01579B;
-    justify-content: end;
+    position: sticky;
     li{
         color: #E1F5FE;
         padding: 1em 3.5em;
