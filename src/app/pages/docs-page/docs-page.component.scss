@@ -13,28 +13,27 @@
     align-self: flex-start;
     padding: 0 1em;
     margin-right: 10em;
-    ul{
-        list-style-type: none;
-        li{
-            padding: 0 .5em;
-        }
+    ul {
+      list-style-type: none;
+      li {
+        padding: 0 0.5em;
+      }
     }
-    button{
-        background-color: transparent;
-        border: none;
-        font-family: $main-font;
-        font-size: 1em;
-        padding: 0;
-        cursor: pointer;
-        color: blue;
-        box-sizing: border-box;
+    button {
+      background-color: transparent;
+      border: none;
+      font-family: $main-font;
+      font-size: 1em;
+      padding: 0;
+      cursor: pointer;
+      color: blue;
+      box-sizing: border-box;
 
-        &:hover{
-            border-bottom: 1px solid blue;
-        }
+      &:hover {
+        border-bottom: 1px solid blue;
+      }
     }
   }
-
 
   .content {
     margin-right: 10em;
@@ -44,27 +43,33 @@
       margin-top: 3em;
       margin-bottom: 3em;
     }
-    .endpoint{
-        .get{
-            color: rgb(3, 197, 3);
-        }
-        .post{
-          color: red;
-        }
-        .method{
-          font-size: 1.2em;
+    .endpoint {
+      img {
+        width: 60%;
+      }
+      mat-panel-description {
+        display: flex;
+        flex-direction: column;
+        p {
           margin: 0;
         }
-        img{
-            width: 100%;
-        }
-        mat-panel-description{
-          display: flex;
-          flex-direction: column;
-          p{
-            margin: 0;
-          }
-        }
+      }
+    }
+    .get {
+      color: rgb(3, 197, 3);
+    }
+    .post {
+      color: blueviolet;
+    }
+    .delete {
+      color: red;
+    }
+    .put {
+      color: orange;
+    }
+    .method {
+      font-size: 1.2em;
+      margin: 0;
     }
   }
 }
