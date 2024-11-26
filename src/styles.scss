@@ -8,4 +8,13 @@ html, body{
     background-color: $bg-color;
     color: $font-color;
     font-family: $main-font;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    margin-bottom: 20px;
+    padding: 1em;
+}
+.mat-expansion-panel-header-description {
+    align-items: start !important;
 }

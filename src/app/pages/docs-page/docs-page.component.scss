@@ -1,0 +1,75 @@
+@import "../../../variables";
+.documentation-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  border: 1px solid rgb(223, 218, 218);
+  display: flex;
+  background-color: rgb(232, 240, 243);
+
+  .table-content {
+    top: 0;
+    position: sticky;
+    min-width: max-content;
+    align-self: flex-start;
+    padding: 0 1em;
+    margin-right: 10em;
+    ul {
+      list-style-type: none;
+      li {
+        padding: 0 0.5em;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      font-family: $main-font;
+      font-size: 1em;
+      padding: 0;
+      cursor: pointer;
+      color: blue;
+      box-sizing: border-box;
+
+      &:hover {
+        border-bottom: 1px solid blue;
+      }
+    }
+  }
+
+  .content {
+    margin-right: 10em;
+
+    .divider {
+      width: 20%;
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    .endpoint {
+      img {
+        width: 60%;
+      }
+      mat-panel-description {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .get {
+      color: rgb(3, 197, 3);
+    }
+    .post {
+      color: blueviolet;
+    }
+    .delete {
+      color: red;
+    }
+    .put {
+      color: orange;
+    }
+    .method {
+      font-size: 1.2em;
+      margin: 0;
+    }
+  }
+}

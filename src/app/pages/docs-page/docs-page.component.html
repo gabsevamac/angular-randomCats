@@ -1,0 +1,123 @@
+<div class="documentation-container">
+  <nav class="table-content">
+    <ul>
+        <li><button (click)="scrollTo(general)">General Information</button></li>
+        <li><button (click)="scrollTo(descriptions)">Endpoints Descriptions</button></li>
+        <li><button (click)="scrollTo(params)">Params and Returns</button></li>
+      </ul>
+  </nav>
+  <div class="content">
+    <h2 #general>General information</h2>
+    <p>
+      This API is a non-commercial project developed as part of a college
+      assignment. Its primary purpose is to serve as a practical implementation
+      for learning and showcasing concepts related to API design, development,
+      and documentation. The API is designed exclusively for academic use,
+      aiming to demonstrate functionality and best practices in building RESTful
+      services.<br>This project does not involve any commercial intent or
+      real-world application beyond the educational scope. Its features and
+      endpoints are tailored to meet the requirements of the assignment and to
+      provide a hands-on experience in working with modern web development
+      technologies.
+    </p>
+    <hr class="divider">
+    <h2 #descriptions>Endpoints Descriptions</h2>
+    <p><strong class="get">GET</strong> /img - Retrieves a complete list of all images stored in the database.</p>
+    <p><strong class="get">GET</strong> /random/img - Fetches a randomly selected image from the database.</p>
+    <p><strong class="post">POST</strong> /img/upload - Allows you to upload a new image to the database.</p>
+    <p><strong class="post">POST</strong> /img/delete - Pass a list of IDs to delete multiple images from the database.</p>
+    <p><strong class="put">PUT</strong> /update/{{'{id}'}} - Update an existing image in the database using its ID.</p>
+    <p><strong class="delete">DELETE</strong> /img/{{'{id}'}} - Pass a list of IDs to delete multiple images from the database.</p>
+    <hr class="divider">
+    <h2 #params>Params and Returns</h2>
+    <div class="endpoint">
+        
+        <ul>
+            <h3>Headers: </h3>
+            <img src="headers.svg" alt="headers">
+            <li class="endpoint">
+                <h3>Image Endpoints</h3>
+                <mat-accordion>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="get">GET </strong>: /img</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description>
+                            <h3>Params:</h3>
+                            <p>No params...</p>
+                            <h3>Return Example:</h3>
+                            <img src="imgReturn 1.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="get">GET </strong>: /random/img</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description>
+                            <h3>Params:</h3>
+                            <p>No params...</p>
+                            <h3>Return Example:</h3>
+                            <img src="randomImage.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="post">POST </strong>: /img/upload</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description>
+                            <h3>Params: (Body)</h3>
+                            <ul>
+                                <li><code>File: </code> <i>File image</i></li>
+                            </ul>
+                            <h3>Return Example:</h3>
+                            <img src="postingImage.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="post">POST </strong>: /img/deletePics</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description>
+                            <h3>Params: (Body)</h3>
+                            <ul>
+                                <li><code>Ids: </code> <i>Array with the id's of the images</i></li>
+                            </ul>
+                            <h3>Return Example:</h3>
+                            <img src="massiveDelete.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="put">PUT </strong>: /img/update/{{'{id}'}}</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description >
+                            <h3>Params:</h3>
+                            <ul>
+                                <li><code>Id: </code> <i>Id of the image that you want to update</i></li>
+                            </ul>
+                            <h3>Return Example:</h3>
+                            <img src="updateImage.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <p class="method"><strong class="delete">DELETE </strong>: /img/{{'{id}'}}</p>
+                        </mat-expansion-panel-header>
+                        <mat-panel-description >
+                            <h3>Params:</h3>
+                            <ul>
+                                <li><code>Id: </code> <i>Id of the image that you want to delete</i></li>
+                            </ul>
+                            <h3>Return Example:</h3>
+                            <img src="deleteImage.svg" alt="code">
+                        </mat-panel-description>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </li>
+        
+            
+        </ul>
+    </div>
+    <hr class="divider">
+  </div>
+</div>
