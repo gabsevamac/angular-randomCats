@@ -1,0 +1,7 @@
+<div class="playground-container">
+    <h1>Get a random cat meme</h1>
+    @if(currentImage){
+        <img [@fadeInOut]="isFaded ? 'In' : 'Out'" src="{{currentImage}}" alt="cat meme">
+    }
+    <button (click)="getRandomImage()">Get Meme</button>
+</div>
